@@ -1,5 +1,5 @@
 ---
-const { title = "Project NIRV – Coming Soon" } = Astro.props;
+const { title = "Project Nirv – Coming Soon" } = Astro.props;
 ---
 
 <html lang="en">
@@ -7,6 +7,11 @@ const { title = "Project NIRV – Coming Soon" } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" />
+    <!-- if you’re using PNG instead, use this: -->
+    <!-- <link rel="icon" type="image/png" href="/favicon.png" /> -->
   </head>
 
   <body
@@ -21,7 +26,7 @@ const { title = "Project NIRV – Coming Soon" } = Astro.props;
       justify-content: center;
     "
   >
-    <main
+        <main
       style="
         text-align: center;
         padding: 2.5rem 2rem;
@@ -33,6 +38,11 @@ const { title = "Project NIRV – Coming Soon" } = Astro.props;
         backdrop-filter: blur(16px);
       "
     >
+      <img
+        src="/logo.png"
+        alt="Project Nirv"
+        style="width: 72px; height: 72px; margin-bottom: 1.5rem; border-radius: 16px;"
+      />
       <div
         style="
           display: inline-flex;
