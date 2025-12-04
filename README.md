@@ -1,46 +1,30 @@
-# Astro Starter Kit: Basics
+# Project Nirv
 
-```sh
-npm create astro@latest -- --template basics
-```
+![Project Nirv Logo](public/nirv.png)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Project Nirv functions as a research initiative built around the idea of **non-linear learning** and **directional insight**.  
+The name represents its framework: **Non-Linear Intelligence Research Vector** — a structured method for examining systems, markets, and ideas without assuming linear behavior.
 
-## 🚀 Project Structure
+The project collects information from verified sources, removes noise, and publishes concise, data-backed studies.  
+The aim is clarity: understand how systems operate, why they evolve, and where they are likely to move.
 
-Inside of your Astro project, you'll see the following folders and files:
+---
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+## Purpose
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+- Establish a consistent vector for ongoing research  
+- Produce structured breakdowns of markets and systems  
+- Highlight patterns, interactions, and second-order effects  
+- Build a public archive of distilled insight  
 
-## 🧞 Commands
+---
 
-All commands are run from the root of the project, from a terminal:
+## Approach
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+- Non-linear thinking models  
+- Source-based verification over speculation  
+- Synthesis over commentary  
+- Directional analysis over static description  
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+---
+**– ADV**
