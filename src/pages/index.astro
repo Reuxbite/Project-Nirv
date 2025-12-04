@@ -1,11 +1,32 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Project Nirv">
+  <main style="max-width: 720px; margin: 80px auto; padding: 0 1.5rem;">
+    <h1 style="font-size: 2.8rem; margin-bottom: 0.5rem;">
+      Project Nirv
+    </h1>
+    <p style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 2rem;">
+      A data-backed research project that turns verified sources into clear,
+      simple and useful studies on markets, industries and business systems.
+    </p>
+
+    <section style="margin-bottom: 2rem;">
+      <h2 style="font-size: 1.4rem; margin-bottom: 0.5rem;">What this is</h2>
+      <p style="line-height: 1.6;">
+        Project Nirv collects trusted reports, filings and datasets, then
+        distills them into structured analysis. The goal is to cut noise and
+        keep only the signal.
+      </p>
+    </section>
+
+    <section>
+      <h2 style="font-size: 1.4rem; margin-bottom: 0.5rem;">What’s coming</h2>
+      <p style="line-height: 1.6;">
+        Upcoming: industry deep dives, market maps and data notes that can be
+        used as sources for operators, students and researchers.
+      </p>
+    </section>
+  </main>
 </Layout>
