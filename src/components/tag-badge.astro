@@ -1,0 +1,13 @@
+---
+// Tag Badge Component - displays research category tags
+const { tag, variant = "default" } = Astro.props;
+
+const baseClasses = "inline-block px-3 py-1 font-mono text-xs font-semibold rounded-sm";
+const variantClasses = variant === "outline" 
+  ? "border border-gray-700 text-gray-300" 
+  : "bg-gray-800 text-gray-300";
+---
+
+<span class={`${baseClasses} ${variantClasses}`}>
+  {tag}
+</span>

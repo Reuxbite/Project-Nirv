@@ -1,121 +1,89 @@
 ---
-import Layout from "../layouts/Layout.astro";
+// Home Page - lists all research topics
+import BaseLayout from "../layouts/base-layout.astro";
+import Header from "../components/header.astro";
+import Footer from "../components/footer.astro";
+import ResearchCard from "../components/research-card.astro";
+import FilterTags from "../components/filter-tags.astro";
 
-const title = "Project NIRV – Coming Soon";
-const description =
-  "A research project mapping how systems really behave. Studies, notes, and non-linear insight are being assembled.";
+// Research data - in production, fetch from a CMS or data source
+const researchData = [
+  {
+    id: "adaptive-systems",
+    title: "Adaptive Systems in Global Supply Chains",
+    brief: "How non-linear feedback loops reshape resilience and efficiency across interconnected networks.",
+    date: "2025-01-15",
+    tag: "Systems",
+  },
+  {
+    id: "market-dynamics",
+    title: "Market Dynamics Under Uncertainty",
+    brief: "Examining pricing mechanisms when information asymmetry and distributed decision-making collide.",
+    date: "2025-01-12",
+    tag: "Markets",
+  },
+  {
+    id: "emergence-patterns",
+    title: "Emergence Patterns in Complex Systems",
+    brief: "A theoretical exploration of how order arises from chaos without top-down coordination.",
+    date: "2025-01-08",
+    tag: "Ideas",
+  },
+  {
+    id: "data-methodology",
+    title: "Data Collection Methodology for Distributed Systems",
+    brief: "Best practices for sampling, temporal alignment, and inference from non-linear sources.",
+    date: "2025-01-05",
+    tag: "Notes",
+  },
+  {
+    id: "network-topology",
+    title: "Network Topology and Behavioral Change",
+    brief: "How graph structure influences information diffusion and collective decision outcomes.",
+    date: "2024-12-28",
+    tag: "Systems",
+  },
+  {
+    id: "valuation-frameworks",
+    title: "Non-Traditional Valuation Frameworks",
+    brief: "Moving beyond discounted cash flows in markets where growth is chaotic and non-predictable.",
+    date: "2024-12-20",
+    tag: "Markets",
+  },
+];
+
+const tags = ["Systems", "Markets", "Ideas", "Notes"];
 ---
 
-<Layout {title} {description}>
-  <section
-    style="
-      max-width: 720px;
-      width: 100%;
-      box-sizing: border-box;
-      background: radial-gradient(circle at top left, #171b2b 0, #0a0c16 45%, #050611 100%);
-      border-radius: 24px;
-      padding: 2.4rem 2rem 2.1rem;
-      border: 1px solid rgba(134, 144, 255, 0.26);
-      box-shadow:
-        0 22px 60px rgba(0, 0, 0, 0.85),
-        0 0 0 1px rgba(30, 40, 80, 0.65);
-      text-align: center;
-    "
-  >
-    <div
-      style="
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        gap:0.75rem;
-        margin-bottom:1.5rem;
-        flex-wrap:wrap;
-      "
-    >
-      <div
-        style="
-          display:inline-flex;
-          align-items:center;
-          gap:0.45rem;
-          padding:0.35rem 0.8rem;
-          border-radius:999px;
-          background:rgba(7, 9, 18, 0.9);
-          border:1px solid rgba(116, 227, 255, 0.4);
-          font-size:0.72rem;
-          letter-spacing:0.12em;
-          text-transform:uppercase;
-          color:#c8f9ff;
-        "
-      >
-        <span
-          style="
-            width:7px;
-            height:7px;
-            border-radius:50%;
-            background:#6fffea;
-            box-shadow:0 0 12px #6fffea;
-          "
-        ></span>
-        <span>Project NIRV</span>
-      </div>
+<BaseLayout title="Research">
+  <Header />
 
-      <div
-        style="
-          display:inline-flex;
-          align-items:center;
-          padding:0.35rem 0.9rem;
-          border-radius:999px;
-          border:1px solid rgba(142, 130, 255, 0.5);
-          font-size:0.72rem;
-          letter-spacing:0.16em;
-          text-transform:uppercase;
-          color:#c6c5ff;
-          background:rgba(10, 9, 26, 0.92);
-          white-space:nowrap;
-        "
-      >
-        Non-Linear Intelligence Research Vector
-      </div>
+  <main class="max-w-6xl mx-auto px-6 py-12 md:py-16">
+    <!-- Hero Section -->
+    <div class="mb-16">
+      <h1 class="font-mono font-bold text-3xl md:text-4xl text-white mb-4">Project Nirv</h1>
+      <p class="font-mono text-lg text-cyan-accent mb-2">Non-Linear Intelligence Research Vector</p>
+      <p class="font-mono text-sm text-gray-500">Structured research. Non-linear insight.</p>
     </div>
 
-    <h1
-      style="
-        font-size:2.35rem;
-        margin:0 0 0.75rem;
-        letter-spacing:0.08em;
-        text-transform:uppercase;
-      "
-    >
-      Project NIRV
-    </h1>
+    <!-- Filter Tags -->
+    <FilterTags tags={tags} />
 
-    <p
-      style="
-        margin:0 0 1.9rem;
-        font-size:0.98rem;
-        line-height:1.7;
-        color:#d3d5e8;
-      "
-    >
-      A research project mapping how systems really behave. Studies, notes, and
-      non-linear insight are being assembled.
-    </p>
-
-    <div
-      style="
-        display:flex;
-        flex-direction:column;
-        gap:0.45rem;
-        font-size:0.86rem;
-        color:#a7aac7;
-      "
-    >
-      <span style="font-weight:700; color:#f4f4ff;">
-        Coming soon.
-      </span>
-      <span>
-        This space will publish structured, data-backed research as it&apos;s ready.
-      </span>
+    <!-- Research Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12" id="research-grid">
+      {researchData.map((item) => (
+        <div data-research-tag={item.tag}>
+          <ResearchCard
+            id={item.id}
+            title={item.title}
+            brief={item.brief}
+            date={item.date}
+            tag={item.tag}
+          />
+        </div>
+      ))}
     </div>
-  </section>
-</Layout>
+  </main>
+
+  <Footer />
+</BaseLayout>
