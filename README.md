@@ -1,4 +1,4 @@
-# Project Nirv
+# Project NIRV
 ![Project Nirv Logo](public/logo.png)
 
 Project Nirv functions as a research initiative built around the idea of **non-linear learning** and **directional insight**.  
