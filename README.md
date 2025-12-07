@@ -1,6 +1,6 @@
 # Project Nirv
-
-![Project Nirv Logo](public/nirv.png)
+projectnirv.studio
+![Project Nirv Logo](public/logo.png)
 
 Project Nirv functions as a research initiative built around the idea of **non-linear learning** and **directional insight**.  
 The name represents its framework: **Non-Linear Intelligence Research Vector** — a structured method for examining systems, markets, and ideas without assuming linear behavior.
@@ -25,6 +25,11 @@ The aim is clarity: understand how systems operate, why they evolve, and where t
 - Source-based verification over speculation  
 - Synthesis over commentary  
 - Directional analysis over static description  
+
+
+
+---
+projectnirv.studio
 
 ---
 **– ADV**
