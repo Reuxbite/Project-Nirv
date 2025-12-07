@@ -20,7 +20,7 @@ jobs:
       - name: Install, build, and upload site
         uses: withastro/action@v3
         with:
-          path: ./Project-Nirv
+          path: ./
           node-version: 18
 
   deploy:
