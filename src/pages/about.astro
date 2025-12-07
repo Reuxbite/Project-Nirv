@@ -2,14 +2,11 @@
 import Breadcrumbs from '@/components/Breadcrumbs.astro'
 import Link from '@/components/Link.astro'
 import PageHead from '@/components/PageHead.astro'
-import ProjectCard from '@/components/ProjectCard.astro'
 import Layout from '@/layouts/Layout.astro'
-import { getAllProjects } from '@/lib/data-utils'
 import { getEntry, render } from 'astro:content'
 
 const aboutContent = await getEntry('about', 'about')
 const { Content } = aboutContent ? await render(aboutContent) : { Content: null }
-const projects = await getAllProjects()
 ---
 
 <Layout class="max-w-3xl">

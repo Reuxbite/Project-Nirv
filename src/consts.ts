@@ -2,7 +2,8 @@ export const SITE = {
   title: "Project NIRV",
   description: "Non-Linear Intelligence Research Vector — structured research and non-linear insight.",
   href: "https://projectnirv.studio",
-  locale: "en",   // <-- FIX
+  locale: "en",
+  author: "Reuxbite",
   featuredPostCount: 2,
   postsPerPage: 5,
 };
