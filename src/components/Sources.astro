@@ -1,0 +1,39 @@
+---
+import Link from './Link.astro'
+
+interface Props {
+  sources?: Array<{
+    title: string
+    url?: string
+    citation?: string
+  }>
+}
+
+const { sources } = Astro.props
+---
+
+{sources && sources.length > 0 && (
+  <section class="mt-12 pt-8 border-t border-blue-600">
+    <h2 class="mb-4 text-xl font-medium">Sources & References</h2>
+    <ol class="space-y-2 text-sm text-slate-300">
+      {sources.map((source, index) => (
+        <li>
+          <span class="font-medium">{index + 1}. {source.title}</span>
+          {source.url && (
+            <>
+              {' – '}
+              <Link href={source.url} external underline>
+                View Source
+              </Link>
+            </>
+          )}
+          {source.citation && (
+            <div class="mt-1 text-xs text-slate-400 italic">
+              Citation: {source.citation}
+            </div>
+          )}
+        </li>
+      ))}
+    </ol>
+  </section>
+)}

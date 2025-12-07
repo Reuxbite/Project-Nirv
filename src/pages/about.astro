@@ -5,7 +5,10 @@ import PageHead from '@/components/PageHead.astro'
 import ProjectCard from '@/components/ProjectCard.astro'
 import Layout from '@/layouts/Layout.astro'
 import { getAllProjects } from '@/lib/data-utils'
+import { getEntry, render } from 'astro:content'
 
+const aboutContent = await getEntry('about', 'about')
+const { Content } = aboutContent ? await render(aboutContent) : { Content: null }
 const projects = await getAllProjects()
 ---
 
@@ -16,31 +19,24 @@ const projects = await getAllProjects()
   <section>
     <div class="min-w-full">
       <div class="prose mb-8">
-        <p class="mt-0">
-          astro-erudite is an opinionated, unstyled static blogging template
-          that prioritizes simplicity and performance, built with <Link
-            href="https://astro.build"
-            external
-            underline>Astro</Link
-          >, <Link href="https://tailwindcss.com" external underline
-            >Tailwind</Link
-          >, and <Link href="https://ui.shadcn.com" external underline
-            >shadcn/ui</Link
-          >. It provides a clean foundation for your content while being
-          extremely easy to customize.
-        </p>
-        <p>
-          To learn more about the philosophy behind this template, check out the
-          following blog post: <Link
-            href="/blog/the-state-of-static-blogs"
-            underline>The State of Static Blogs in 2024</Link
-          >.
-        </p>
+        {Content && <Content />}
       </div>
 
-      <h2 class="mb-4 text-2xl font-medium">Example Projects Listing</h2>
-      <div class="flex flex-col gap-4">
-        {projects.map((project) => <ProjectCard project={project} />)}
+
+      <div class="mt-12 pt-8 border-t border-blue-600">
+        <p class="text-muted-foreground text-sm text-center">
+          Built with the <Link
+            href="https://github.com/jktrn/astro-erudite"
+            class="text-foreground"
+            external
+            underline>astro-erudite</Link
+          > template by <Link
+            href="https://github.com/jktrn"
+            class="text-foreground"
+            external
+            underline>enscribe</Link
+          >
+        </p>
       </div>
     </div>
   </section>

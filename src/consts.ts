@@ -1,55 +1,44 @@
-import type { IconMap, SocialLink, Site } from '@/types'
-
-export const SITE: Site = {
-  title: 'astro-erudite',
-  description:
-    'astro-erudite is a opinionated, unstyled blogging template—built with Astro, Tailwind, and shadcn/ui.',
-  href: 'https://astro-erudite.vercel.app',
-  author: 'jktrn',
-  locale: 'en-US',
+export const SITE = {
+  title: "Project NIRV",
+  description: "Non-Linear Intelligence Research Vector — structured research and non-linear insight.",
+  href: "https://projectnirv.studio",
+  locale: "en",   // <-- FIX
   featuredPostCount: 2,
-  postsPerPage: 3,
-}
+  postsPerPage: 5,
+};
 
-export const NAV_LINKS: SocialLink[] = [
-  {
-    href: '/blog',
-    label: 'blog',
-  },
-  {
-    href: '/authors',
-    label: 'authors',
-  },
-  {
-    href: '/about',
-    label: 'about',
-  },
-]
+export const NAV_LINKS = [
+  { href: "/blog", label: "Research" },
+  { href: "/about", label: "About" },
+];
 
-export const SOCIAL_LINKS: SocialLink[] = [
-  {
-    href: 'https://github.com/jktrn',
-    label: 'GitHub',
-  },
-  {
-    href: 'https://twitter.com/enscry',
-    label: 'Twitter',
-  },
-  {
-    href: 'mailto:jason@enscribe.dev',
-    label: 'Email',
-  },
-  {
-    href: '/rss.xml',
-    label: 'RSS',
-  },
-]
+// Icons used by the SocialIcons component.
+// You can change the URLs or remove items if you want fewer links.
+export const ICON_MAP = {
+  github: "lucide:github",
+  x: "lucide:twitter",
+  email: "lucide:mail",
+} as const;
 
-export const ICON_MAP: IconMap = {
-  Website: 'lucide:globe',
-  GitHub: 'lucide:github',
-  LinkedIn: 'lucide:linkedin',
-  Twitter: 'lucide:twitter',
-  Email: 'lucide:mail',
-  RSS: 'lucide:rss',
-}
+export const SOCIAL_LINKS: { href: string; icon: keyof typeof ICON_MAP }[] = [
+  {
+    href: "https://github.com/Reuxbite",
+    icon: "github",
+  },
+  // Add more if you want:
+  // { href: "https://x.com/your-handle", icon: "x" },
+  // { href: "mailto:you@example.com", icon: "email" },
+];
+export const FOOTER_LINKS = [
+  { href: "/about", label: "About" },
+  { href: "/blog", label: "Research" },
+];
+
+
+export const NIRV_TAGS = [
+  "systems",
+  "markets",
+  "ideas",
+  "notes",
+] as const;
+export type NIRVTag = (typeof NIRV_TAGS)[number];

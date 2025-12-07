@@ -24,16 +24,16 @@ const years = Object.keys(postsByYear).sort((a, b) => parseInt(b) - parseInt(a))
 ---
 
 <Layout class="max-w-3xl">
-  <PageHead slot="head" title="Blog" />
+  <PageHead slot="head" title="Research" />
   <Breadcrumbs
     items={[
-      { label: 'Blog', href: '/blog', icon: 'lucide:library-big' },
+      { label: 'Research', href: '/blog', icon: 'lucide:library-big' },
       { label: `Page ${page.currentPage}`, icon: 'lucide:book-copy' },
     ]}
   />
 
   <div class="flex min-h-[calc(100vh-18rem)] flex-col gap-y-8">
-    {
+    {years.length > 0 ? (
       years.map((year) => (
         <section class="flex flex-col gap-y-4">
           <div class="font-medium">{year}</div>
@@ -46,7 +46,21 @@ const years = Object.keys(postsByYear).sort((a, b) => parseInt(b) - parseInt(a))
           </ul>
         </section>
       ))
-    }
+    ) : (
+      <div class="flex flex-col items-center justify-center py-24 px-4 rounded-lg border border-blue-600/30 bg-slate-950/50">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="text-blue-400 text-xl font-medium">Still Researching</span>
+          <div class="flex gap-1">
+            <span class="w-2 h-2 bg-blue-400 rounded-full animate-thinking-dots" style="animation-delay: 0s"></span>
+            <span class="w-2 h-2 bg-blue-400 rounded-full animate-thinking-dots" style="animation-delay: 0.2s"></span>
+            <span class="w-2 h-2 bg-blue-400 rounded-full animate-thinking-dots" style="animation-delay: 0.4s"></span>
+          </div>
+        </div>
+        <p class="text-slate-400 text-center max-w-md">
+          New insights and research articles are being compiled. Check back soon for data-backed analysis on systems, markets, and ideas.
+        </p>
+      </div>
+    )}
   </div>
 
   <PaginationComponent

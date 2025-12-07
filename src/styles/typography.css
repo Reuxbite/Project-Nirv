@@ -1,4 +1,4 @@
-@reference './global.css';
+@import 'tailwindcss';
 
 @layer base {
   p,
@@ -27,125 +27,235 @@
 
 @layer components {
   .prose {
-    @apply text-foreground text-base leading-7;
+    color: var(--foreground);
+    font-size: 1rem;
+    line-height: 1.75;
 
     :where(p):not(:where(.not-prose, .not-prose *)) {
-      @apply text-foreground/80 my-5;
+      color: rgb(var(--foreground) / 0.8);
+      margin-top: 1.25rem;
+      margin-bottom: 1.25rem;
     }
 
     :where(h1, h2, h3, h4, h5, h6):not(:where(.not-prose, .not-prose *)) {
-      @apply text-foreground scroll-mt-32 font-medium xl:scroll-mt-20;
+      color: var(--foreground);
+      scroll-margin-top: 8rem;
+      font-weight: 500;
+    }
+
+    @media (min-width: 1280px) {
+      :where(h1, h2, h3, h4, h5, h6):not(:where(.not-prose, .not-prose *)) {
+        scroll-margin-top: 5rem;
+      }
     }
 
     :first-child:not(:where(.not-prose, .not-prose *)) {
-      @apply mt-0;
+      margin-top: 0;
     }
 
-    /* Don't use an <h1> in your posts, one is already generated in blog/[...id].astro */
     :where(h1):not(:where(.not-prose, .not-prose *)) {
-      @apply mt-8 mb-6 text-4xl;
+      margin-top: 2rem;
+      margin-bottom: 1.5rem;
+      font-size: 2.25rem;
     }
 
     :where(h2):not(:where(.not-prose, .not-prose *)) {
-      @apply mt-8 mb-4 text-2xl;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
     }
 
     :where(h3):not(:where(.not-prose, .not-prose *)) {
-      @apply mt-8 mb-4 text-xl;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      font-size: 1.25rem;
     }
 
     :where(h4):not(:where(.not-prose, .not-prose *)) {
-      @apply mt-7 mb-3 text-lg;
+      margin-top: 1.75rem;
+      margin-bottom: 0.75rem;
+      font-size: 1.125rem;
     }
 
     :where(h5, h6):not(:where(.not-prose, .not-prose *)) {
-      @apply mt-5 mb-3;
+      margin-top: 1.25rem;
+      margin-bottom: 0.75rem;
     }
 
     :where(a):not(:where(.not-prose, .not-prose *)) {
-      @apply text-foreground decoration-muted-foreground hover:decoration-foreground font-medium break-words underline underline-offset-[3px] transition-colors;
+      color: var(--foreground);
+      text-decoration-color: var(--muted-foreground);
+      font-weight: 500;
+      word-break: break-word;
+      text-decoration-line: underline;
+      text-underline-offset: 3px;
+      transition: color 200ms;
+    }
+
+    :where(a):hover:not(:where(.not-prose, .not-prose *)) {
+      text-decoration-color: var(--foreground);
     }
 
     :where(strong):not(:where(.not-prose, .not-prose *)) {
-      @apply text-foreground font-medium;
+      color: #60a5fa;
+      font-weight: 500;
     }
 
     :where(ul):not(:where(.not-prose, .not-prose *)) {
-      @apply marker:text-foreground/30 my-5 ml-6 list-disc [&>li]:mt-2;
+      margin-top: 1.25rem;
+      margin-bottom: 1.25rem;
+      margin-left: 1.5rem;
+      list-style-type: disc;
+    }
+
+    :where(ul):not(:where(.not-prose, .not-prose *)) :where(li) {
+      margin-top: 0.5rem;
     }
 
     :where(ol):not(:where(.not-prose, .not-prose *)) {
-      @apply marker:text-foreground/30 my-5 ml-6 list-decimal [&>li]:mt-2;
-      @apply [&[type='A']]:list-[upper-alpha] [&[type='I']]:list-[upper-roman] [&[type='a']]:list-[lower-alpha] [&[type='i']]:list-[lower-roman];
+      margin-top: 1.25rem;
+      margin-bottom: 1.25rem;
+      margin-left: 1.5rem;
+      list-style-type: decimal;
+    }
+
+    :where(ol):not(:where(.not-prose, .not-prose *)) :where(li) {
+      margin-top: 0.5rem;
     }
 
     :where(li):not(:where(.not-prose, .not-prose *)) {
-      @apply text-foreground/80 pl-2 [&>p]:my-0;
+      color: rgb(var(--foreground) / 0.8);
+      padding-left: 0.5rem;
     }
 
-    :where(ul ul, ol ol, ul ol, ol ul):not(:where(.not-prose, .not-prose *)) {
-      @apply marker:text-foreground/30 my-2 ml-6;
+    :where(li > p):not(:where(.not-prose, .not-prose *)) {
+      margin-top: 0;
+      margin-bottom: 0;
     }
 
     :where(code):not(:where(.not-prose, .not-prose *)) {
-      @apply bg-muted/50 text-foreground relative rounded-sm px-[0.3rem] py-[0.2rem] text-sm font-medium break-words;
-      @apply [&>span[data-line='']>*]:text-(--shiki-light) dark:[&>span[data-line='']>*]:text-(--shiki-dark);
+      background-color: rgb(var(--muted) / 0.5);
+      color: var(--foreground);
+      border-radius: 0.125rem;
+      padding-left: 0.3rem;
+      padding-right: 0.3rem;
+      padding-top: 0.2rem;
+      padding-bottom: 0.2rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      word-break: break-word;
     }
 
     :where(blockquote):not(:where(.not-prose, .not-prose *)) {
-      @apply [&_*]:text-muted-foreground small my-6 border-l-2 pl-6;
+      color: var(--muted-foreground);
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-left: 2px solid;
+      border-color: var(--muted-foreground);
+      padding-left: 1.5rem;
+      font-size: 0.875rem;
     }
 
     :where(hr):not(:where(.not-prose, .not-prose *)) {
-      @apply my-8 border-t;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      border-top: 1px solid;
+      border-color: var(--border);
     }
 
     :where(table):not(:where(.not-prose, .not-prose *)) {
-      @apply mx-auto my-6 block max-w-fit overflow-x-auto text-sm;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+      display: block;
+      max-width: fit-content;
+      overflow-x: auto;
+      font-size: 0.875rem;
     }
 
     :where(thead):not(:where(.not-prose, .not-prose *)) {
-      @apply border-muted-foreground/30 border-b;
+      border-bottom: 1px solid;
+      border-color: rgb(var(--muted-foreground) / 0.3);
     }
 
     :where(th):not(:where(.not-prose, .not-prose *)) {
-      @apply px-4 py-2 font-medium;
-      @apply text-left [&[align=center]]:text-center [&[align=right]]:text-right;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      font-weight: 500;
+      text-align: left;
     }
 
     :where(tr):not(:where(.not-prose, .not-prose *)) {
-      @apply border-muted-foreground/30 border-y first:border-t-0 last:border-b-0;
+      border-top: 1px solid;
+      border-bottom: 1px solid;
+      border-color: rgb(var(--muted-foreground) / 0.3);
+    }
+
+    :where(tr):first-child:not(:where(.not-prose, .not-prose *)) {
+      border-top: none;
+    }
+
+    :where(tr):last-child:not(:where(.not-prose, .not-prose *)) {
+      border-bottom: none;
     }
 
     :where(td):not(:where(.not-prose, .not-prose *)) {
-      @apply text-foreground/80 small px-4 py-2 align-top break-words [&>*]:first:mt-0! [&>*]:last:mb-0!;
-      @apply text-left [&[align=center]]:text-center [&[align=right]]:text-right;
+      color: rgb(var(--foreground) / 0.8);
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      vertical-align: top;
+      word-break: break-word;
+      font-size: 0.875rem;
     }
 
-    :where(img, video, figure, .expressive-code):not(
-        :where(.not-prose, .not-prose *)
-      ) {
-      @apply mx-auto my-6;
+    :where(td > *):first-child:not(:where(.not-prose, .not-prose *)) {
+      margin-top: 0 !important;
+    }
+
+    :where(td > *):last-child:not(:where(.not-prose, .not-prose *)) {
+      margin-bottom: 0 !important;
+    }
+
+    :where(img, video, figure, .expressive-code):not(:where(.not-prose, .not-prose *)) {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
     }
 
     :where(pre):not(:where(.not-prose, .not-prose *)) {
-      @apply max-h-[min(68vh,1000px)]! overflow-y-auto [&::-webkit-scrollbar-corner]:hidden;
-    }
-
-    :where(summary):not(:where(.not-prose, .not-prose *)) {
-      @apply [&~*]:small [&~*>*]:first:mt-0! [&~*>*]:last:mb-0!;
+      max-height: min(68vh, 1000px) !important;
+      overflow-y: auto;
     }
 
     :where(kbd):not(:where(.not-prose, .not-prose *)) {
-      @apply text-foreground bg-muted rounded-md border px-2 py-1 text-xs font-medium;
+      color: var(--foreground);
+      background-color: var(--muted);
+      border-radius: 0.375rem;
+      border: 1px solid;
+      border-color: var(--border);
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      padding-top: 0.25rem;
+      padding-bottom: 0.25rem;
+      font-size: 0.75rem;
+      font-weight: 500;
     }
 
     :where(.katex-display):not(:where(.not-prose, .not-prose *)) {
-      @apply text-foreground/80 my-6 overflow-x-auto overflow-y-hidden py-2 tracking-normal;
+      color: rgb(var(--foreground) / 0.8);
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+      overflow-x: auto;
+      overflow-y: hidden;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      letter-spacing: normal;
     }
   }
-}
-
-@utility small {
-  @apply text-sm leading-6 [&_code]:text-xs [&_img,video,figure,details,blockquote,.katex-display,.expressive-code]:my-4! [&_li,ol]:mt-0 [&_p]:my-2! [&_ul]:my-0;
 }
