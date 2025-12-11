@@ -5,6 +5,7 @@ date: 2025-12-11
 tags: ["systems", "markets", "platforms"]
 authors: ["platform_strategy_research"]
 draft: false
+image: "/static/chicken-egg/featured.png"
 sources:
    - title: "Uber rider subsidy share (2015)"
       url: "https://fortune.com/2017/08/23/uber-ride-true-cost/"
@@ -22,6 +23,8 @@ sources:
 ## Executive Summary
 
 The chicken-and-egg problem in two-sided digital marketplaces is not a marketing challenge. It is a structural economic problem rooted in **indirect network effects**, **liquidity thresholds**, and **misaligned incentives**.
+
+![User Utility Rising with Network Size (Conceptual)](/static/chicken-egg/user-utility-network.png)
 
 **Key findings:**
 
@@ -135,7 +138,7 @@ Source: [web:94], [web:103], [web:125]
 
 **Strategic implication:** The cold-start problem is a **liquidity problem**, not a branding problem. No amount of marketing changes the fact that $P_{\text{match}}$ is too low.
 
-[chart:137]
+![Two-Sided Marketplace Dynamics](/static/chicken-egg/marketplace-dynamics.png)
 
 ### 2.2 Cold-Start Trust and Quality Uncertainty (The Lemons Problem)
 
@@ -164,7 +167,7 @@ The speed at which supply can respond to demand incentives dramatically shapes h
 
 Source: [web:123], [web:126], [web:128]
 
-[chart:136]
+![Supply Elasticity × Demand Density Matrix](/static/chicken-egg/supply-elasticity-density.png)
 
 **Strategic insight:** Choose markets where supply is elastic, or accept that your marketplace will remain supply-constrained (and therefore high-take-rate) for the long term.
 
@@ -622,16 +625,12 @@ If you answer "no" to multiple questions, pivot to a different market or busines
 ## Appendices
 
 ### Appendix A: Core System Dynamics
-[chart:135]
+![Two-Sided Marketplace Dynamics](/static/chicken-egg/marketplace-dynamics.png)
 
 ### Appendix B: Supply Elasticity × Demand Density Matrix
-[chart:136]
+![Supply Elasticity × Demand Density Matrix](/static/chicken-egg/supply-elasticity-density.png)
 
 ### Appendix C: Liquidity Threshold Visualization
-[chart:137]
+![User Utility Rising with Network Size (Conceptual)](/static/chicken-egg/user-utility-network.png)
 
 ---
-
-**Document prepared:** December 11, 2025  
-**Data sources:** NBER, SSRN, academic literature, S-1 filings, field experiments  
-**Methodology:** Structured synthesis of peer-reviewed and high-credibility research

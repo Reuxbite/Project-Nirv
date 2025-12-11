@@ -72,7 +72,7 @@
   ::before,
   ::backdrop,
   ::file-selector-button {
-    @apply border-blue-600 outline-blue-500/50 tracking-tight font-mono;
+    @apply tracking-tight;
   }
 
   @keyframes fadeIn {
@@ -200,39 +200,39 @@
   filter: brightness(1.1) contrast(1.05);
 }
 
-/* Dark theme text colors */
+/* Theme-driven text colors */
 html {
-  background: linear-gradient(to bottom, #0f172a, #000000);
-  color: #e2e8f0;
+  background: var(--background);
+  color: var(--foreground);
 }
 
 body {
   background: transparent;
-  color: #e2e8f0;
+  color: var(--foreground);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #f1f5f9;
+  color: var(--foreground);
 }
 
 p {
-  color: #cbd5e1;
+  color: rgb(var(--foreground) / 0.85);
 }
 
 a {
-  color: #60a5fa;
+  color: var(--primary);
 }
 
 a:hover {
-  color: #93c5fd;
+  color: color-mix(in oklab, var(--primary) 70%, var(--primary-foreground));
 }
 
 code {
-  background-color: rgba(30, 41, 59, 0.5);
-  color: #60a5fa;
+  background-color: color-mix(in oklab, var(--muted) 50%, transparent);
+  color: var(--primary);
 }
 
 pre {
-  background-color: rgba(15, 23, 42, 0.8);
-  border: 1px solid #3b82f6;
+  background-color: color-mix(in oklab, var(--background) 85%, transparent);
+  border: 1px solid var(--border);
 }

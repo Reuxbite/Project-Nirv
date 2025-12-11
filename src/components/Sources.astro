@@ -6,6 +6,7 @@ interface Props {
     title: string
     url?: string
     citation?: string
+    note?: string
   }>
 }
 
@@ -13,27 +14,62 @@ const { sources } = Astro.props
 ---
 
 {sources && sources.length > 0 && (
-  <section class="mt-12 pt-8 border-t border-blue-600">
-    <h2 class="mb-4 text-xl font-medium">Sources & References</h2>
-    <ol class="space-y-2 text-sm text-slate-300">
+  <section class="mt-12 pt-8 border-t border-border">
+    <h2 class="mb-4 text-xl font-medium">References & Sources</h2>
+    <ol class="space-y-4 text-sm" start={1}>
       {sources.map((source, index) => (
-        <li>
-          <span class="font-medium">{index + 1}. {source.title}</span>
-          {source.url && (
-            <>
-              {' – '}
-              <Link href={source.url} external underline>
-                View Source
-              </Link>
-            </>
-          )}
-          {source.citation && (
-            <div class="mt-1 text-xs text-slate-400 italic">
-              Citation: {source.citation}
+        <li class="group rounded-md border border-border p-3 bg-[color-mix(in_oklab,var(--muted)_20%,transparent)]">
+          <div class="flex flex-col gap-y-1">
+            <div class="flex items-start justify-between gap-3">
+              <span class="font-medium text-foreground">
+                {index + 1}. {source.title}
+              </span>
+              {source.url && (
+                <Link
+                  href={source.url}
+                  external
+                  underline
+                  class="text-primary whitespace-nowrap"
+                >
+                  View Source
+                </Link>
+              )}
             </div>
-          )}
+            {source.note && (
+              <div class="text-xs text-muted-foreground">{source.note}</div>
+            )}
+            {source.citation && (
+              <div class="mt-1 flex items-center gap-2">
+                <div class="text-xs italic text-muted-foreground flex-1">
+                  {source.citation}
+                </div>
+                <button
+                  type="button"
+                  class="copy-citation text-xs px-2 py-1 rounded border border-border hover:bg-[color-mix(in_oklab,var(--muted)_35%,transparent)]"
+                  data-citation={source.citation}
+                  aria-label="Copy citation"
+                  title="Copy citation"
+                >
+                  Copy
+                </button>
+              </div>
+            )}
+          </div>
         </li>
       ))}
     </ol>
   </section>
 )}
+
+<script>
+  document.addEventListener('astro:page-load', () => {
+    document.querySelectorAll('.copy-citation').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const citation = btn.getAttribute('data-citation') || ''
+        if (citation) {
+          navigator.clipboard?.writeText(citation)
+        }
+      })
+    })
+  })
+</script>
