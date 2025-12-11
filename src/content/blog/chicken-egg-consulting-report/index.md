@@ -25,7 +25,10 @@ sources:
 
 The chicken-and-egg problem in two-sided digital marketplaces is not a marketing challenge. It is a structural economic problem rooted in **indirect network effects**, **liquidity thresholds**, and **misaligned incentives**.
 
-![User Utility Rising with Network Size (Conceptual)](./assets/user-utility-network.png)
+<picture>
+  <source srcset="./assets/user-utility-network.svg" type="image/svg+xml" />
+  <img src="./assets/user-utility-network.png" alt="User Utility Rising with Network Size" />
+</picture>
 
 **Key findings:**
 
