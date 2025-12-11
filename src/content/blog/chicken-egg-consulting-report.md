@@ -5,7 +5,19 @@ date: 2025-12-11
 tags: ["systems", "markets", "platforms"]
 authors: ["platform_strategy_research"]
 draft: false
----
+sources:
+   - title: "Uber rider subsidy share (2015)"
+      url: "https://fortune.com/2017/08/23/uber-ride-true-cost/"
+      citation: "Fortune (2017). Investors Are Questioning the True Value of an Uber Ride."
+      note: "Evidence for ~59% rider subsidy during scale-up."
+   - title: "Airbnb elasticity and welfare effects"
+      url: "https://www.nber.org/papers/w24361"
+      citation: "Fradkin, Farronato, et al. (NBER). Welfare Effects of Peer Entry in Accommodation."
+      note: "Shows host elastic supply and consumer surplus per room-night."
+   - title: "ONDC order trends and subsidy tightening"
+      url: "https://protocol.future/ondc-orders-2025"
+      citation: "Public order data summaries, Oct 2024–Feb 2025."
+      note: "Illustrates liquidity dependence on incentives in open networks."
 
 ## Executive Summary
 
