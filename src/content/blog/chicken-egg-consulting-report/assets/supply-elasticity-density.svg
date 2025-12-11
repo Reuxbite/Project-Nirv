@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="100%" height="100%" fill="#0f172a"/>
+  <g transform="translate(80,60)">
+    <rect x="0" y="0" width="1040" height="660" rx="8" fill="#111827" stroke="#334155"/>
+    <text x="20" y="40" fill="#e2e8f0" font-size="28" font-family="Geist, sans-serif">Supply Elasticity vs. Density</text>
+    <!-- Axes -->
+    <line x1="80" y1="600" x2="960" y2="600" stroke="#64748b"/>
+    <line x1="80" y1="140" x2="80" y2="600" stroke="#64748b"/>
+    <text x="970" y="620" fill="#cbd5e1" font-size="16">Density</text>
+    <text x="15" y="140" fill="#cbd5e1" font-size="16" transform="rotate(-90,15,140)">Elasticity</text>
+    <!-- Curve -->
+    <path d="M80,200 C300,220 520,260 960,540" fill="none" stroke="#ef4444" stroke-width="3"/>
+    <!-- Threshold lines -->
+    <line x1="80" y1="360" x2="960" y2="360" stroke="#f59e0b" stroke-dasharray="8,8"/>
+    <text x="820" y="340" fill="#f59e0b" font-size="16">High-density threshold</text>
+  </g>
+</svg>

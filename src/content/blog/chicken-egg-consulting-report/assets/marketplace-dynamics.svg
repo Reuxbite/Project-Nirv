@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="100%" height="100%" fill="#0f172a"/>
+  <g transform="translate(80,60)">
+    <rect x="0" y="0" width="1040" height="660" rx="8" fill="#111827" stroke="#334155"/>
+    <text x="20" y="40" fill="#e2e8f0" font-size="28" font-family="Geist, sans-serif">Marketplace Dynamics: Supply vs. Demand</text>
+    <!-- Axes -->
+    <line x1="80" y1="600" x2="960" y2="600" stroke="#64748b"/>
+    <line x1="80" y1="140" x2="80" y2="600" stroke="#64748b"/>
+    <text x="970" y="620" fill="#cbd5e1" font-size="16">Transactions</text>
+    <text x="15" y="140" fill="#cbd5e1" font-size="16" transform="rotate(-90,15,140)">Utility / Price</text>
+    <!-- Demand curve -->
+    <path d="M80,180 C300,220 520,320 960,580" fill="none" stroke="#22c55e" stroke-width="3"/>
+    <!-- Supply curve -->
+    <path d="M80,580 C300,420 520,300 960,180" fill="none" stroke="#38bdf8" stroke-width="3"/>
+    <!-- Equilibrium -->
+    <circle cx="560" cy="380" r="6" fill="#f59e0b"/>
+    <text x="580" y="370" fill="#f59e0b" font-size="16">Equilibrium</text>
+  </g>
+</svg>
