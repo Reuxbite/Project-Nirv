@@ -1,5 +1,5 @@
 ---
-title: "The Chicken-and-Egg Problem in Two-Sided Digital Marketplaces: Structural Economics, Empirical Evidence, and Strategic Resolution"
+title: "The Chicken-and-Egg Problem"
 description: "A rigorous consulting-grade analysis of cold-start dynamics in two-sided platforms, grounded in NBER research, field experiments, and S-1 data."
 date: 2025-12-11
 tags: ["platform_strategy", "network_effects", "marketplace_economics"]
