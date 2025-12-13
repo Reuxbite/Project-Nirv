@@ -72,6 +72,75 @@ sources:
   - title: "FTC Antitrust Complaint: Amazon"
     url: "https://www.ftc.gov"
     citation: "US Federal Trade Commission (2023–2024). Amazon FTC Antitrust Complaint. SEC/FTC filings."
+  - title: "Platform Competition in Two-Sided Markets"
+    url: "https://doi.org/10.1162/154247603322493212"
+    citation: "Rochet, J.-C., & Tirole, J. (2003). Platform Competition in Two-Sided Markets. Journal of the European Economic Association, 1(4), 990–1029."
+  - title: "Matchmakers: The New Economics of Multisided Platforms"
+    url: "https://hbsp.harvard.edu/"
+    citation: "Evans, D., & Schmalensee, R. (2016). Matchmakers: The New Economics of Multisided Platforms. Harvard Business Review Press."
+  - title: "Two-Sided Markets, Pricing, and Network Effects"
+    url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3928777"
+    citation: "Jullien, B. (2021). Two-Sided Markets, Pricing, and Network Effects. TSE Working Paper 1238."
+  - title: "The Strategy of Conflict"
+    url: "https://www.hup.harvard.edu/"
+  - title: "The Welfare Effects of Peer Entry in the Accommodation Market: The Case of Airbnb"
+    url: "https://www.nber.org/papers/w27650"
+    citation: "Fradkin, A., Farronato, C., & Larson, B. (2020). The Welfare Effects of Peer Entry in the Accommodation Market: The Case of Airbnb. NBER Working Paper w27650."
+  - title: "The Value of Flexible Work: Evidence from Uber Drivers"
+    url: "https://doi.org/10.1086/701890"
+    citation: "Chen, M. K., Rossi, F., Chevalier, J. A., et al. (2019). The Value of Flexible Work: Evidence from Uber Drivers. Journal of Political Economy, 127(6), 2735–2794."
+  - title: "The Case of Uber"
+    url: "https://www.nber.org/papers/w28145"
+    citation: "Alvarez, F. E., Lippi, F., & Oskolkova, A. (2020). The Case of Uber. NBER Working Paper w28145."
+  - title: "Using Field Experiments to Infer Cross-Side Network Effects in the Rideshare Market"
+    url: "https://doi.org/10.1086/701890"
+    citation: "Yao, S., Chong, S. C., & Beynon, M. (2019). Using Field Experiments to Infer Cross-Side Network Effects in the Rideshare Market. Journal of Political Economy, 127(3), 1320–1373."
+  - title: "Optimal Growth in Two-Sided Markets"
+    url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3520881"
+    citation: "Lobel, I., Sadler, J., & Van Binsbergen, J. (2020). Optimal Growth in Two-Sided Markets. SSRN Working Paper w3520881."
+  - title: "Uber Technologies Inc. Form S-1 Registration Statement"
+    url: "https://www.sec.gov/Archives/edgar/data/1543151/000119312519084233/d578922ds1.htm"
+    citation: "Uber Technologies Inc. (2019). Form S-1 Registration Statement. SEC EDGAR."
+  - title: "DoorDash Inc. Form S-1 Registration Statement"
+    url: "https://www.sec.gov/Archives/edgar/data/1437404/000143740420025237/doord_s1.htm"
+    citation: "DoorDash Inc. (2020). Form S-1 Registration Statement. SEC EDGAR."
+  - title: "Lyft Inc. Form S-1 Registration Statement"
+    url: "https://www.sec.gov/Archives/edgar/data/1759816/000175981619000083/lyft_s1.htm"
+    citation: "Lyft Inc. (2019). Form S-1 Registration Statement. SEC EDGAR."
+  - title: "Airbnb Inc. Form S-1 Registration Statement"
+    url: "https://www.sec.gov/Archives/edgar/data/1618707/000161870720000066/abnb-20200930.htm"
+    citation: "Airbnb Inc. (2020). Form S-1 Registration Statement. SEC EDGAR."
+  - title: "Investors Are Questioning the True Value of an Uber Ride"
+    url: "https://fortune.com/2017/08/23/uber-valuation-ride-pricing-investors/"
+    citation: "Fortune (2017). Investors Are Questioning the True Value of an Uber Ride. Published August 23, 2017."
+  - title: "DoorDash: Great Unit Economics, but Many Unanswered Questions"
+    url: "https://www.linkedin.com/pulse/doordash-great-unit-economics-many-unanswered-daniel-mccarthy/"
+    citation: "McCarthy, D. (2021). DoorDash: Great Unit Economics, but Many Unanswered Questions. Emory University research analysis."
+  - title: "Airbnb Case Study: Managing Supply and Demand in the Sharing Economy"
+    url: "https://hbsp.harvard.edu/"
+    citation: "Horton, J. J. (2010). Airbnb Case Study. Harvard Business School Press."
+  - title: "Has the ONDC Experiment Failed?"
+    url: "https://finshots.in/archive/has-the-ondc-experiment-failed-nrai-rapido-t-koshy-swiggy-zomato-food-delivery/"
+    citation: "Finshots (2025). Has the ONDC Experiment Failed? Published May 2025."
+  - title: "ONDC Adoption Trends and Order Data"
+    url: "https://www.rbi.org.in/"
+    citation: "Reserve Bank of India. ONDC Adoption Trends Report, 2024–2025."
+  - title: "How Users Drive Value in Two-Sided Markets: Platform Network Composition and Engagement"
+    url: "https://www.bu.edu/dbi/"
+    citation: "Boston University, Digital Business Initiative (2021). How Users Drive Value in Two-Sided Markets: Platform Network Composition and Engagement."
+  - title: "Does Regulation Affect Economic Outcomes? The Case of Dentistry"
+    url: "https://doi.org/10.1086/467467"
+    citation: "Kleiner, M., & Kudrle, R. T. (2000). Does Regulation Affect Economic Outcomes? The Case of Dentistry. Journal of Law and Economics, 43(2), 547–582."
+  - title: "Venture Capital Returns Analysis: Tech Platform Performance"
+    url: "https://www.cbinsights.com"
+    citation: "CB Insights (2020). Venture Capital Returns Analysis: Tech Platform Performance. CB Insights Research Report."
+  - title: "Digital Markets Act (DMA)"
+    url: "https://eur-lex.europa.eu/EN/legal-content/summary/digital-markets-act-dma.html"
+    citation: "European Commission (2024). Digital Markets Act (DMA). Official Journal of the European Union."
+  - title: "FTC Antitrust Complaint: Amazon"
+    url: "https://www.ftc.gov"
+    citation: "US Federal Trade Commission (2023–2024). Amazon FTC Antitrust Complaint. SEC/FTC filings."
+
 ---
 
 ## Executive Summary
@@ -219,8 +288,8 @@ $$\epsilon_s = \frac{\% \Delta \text{Quantity Supplied}}{\% \Delta \text{Price}}
 | **Enterprise B2B services** | Specialized consultants | 0.1-0.3 (inelastic) | 0.2-0.5 (inelastic) | Industry observation |
 | **Licensed professionals** | Doctors, lawyers, therapists | 0.05-0.15 (highly inelastic) | 0.1-0.3 (inelastic) |
 
-![Liquidity Benchmarks](./chicken-egg-consulting-report/assets/163.png)
-![Supply Elasticity vs. Time-to-Liquidity](./chicken-egg-consulting-report/assets/166.png)
+![Liquidity Benchmarks](./chicken-egg/assets/163.png)
+![Supply Elasticity vs. Time-to-Liquidity](./chicken-egg/assets/166.png)
 
 **Key insight:** High elasticity is a **structural asset** for cold start. Once demand density reaches a threshold, supply floods in. Low elasticity means supply remains constrained, prices stay high, and margins remain elevated indefinitely.
 
@@ -249,7 +318,7 @@ Typically, this is the demand side. Supply sides are charged higher take rates t
 | **DoorDash** | Free/discounted delivery, discounts | Restaurant commission waivers | 15-30% | 2013-2019 |
 | **Airbnb** | No direct subsidy | None | 3% host fee | 2008-2012 |
 
-![Platform Subsidy Structures](./chicken-egg-consulting-report/assets/164.png)
+![Platform Subsidy Structures](./chicken-egg/assets/164.png)
 
 **Problem of misaligned subsidies:** Yao et al. (2019, field experiments in rideshare) show that **flat driver subsidies applied uniformly** often increase cost more than they increase durable supply, especially when cross-side elasticity is misestimated.
 
@@ -374,7 +443,7 @@ The empirical record is unambiguous: **successful platforms purchased liquidity,
 
 **Key pattern:** Platforms succeeded when **supply elasticity was high** (hosts, drivers, merchants could scale easily) AND **demand density was high** (major cities, concentrated demand). Together, these factors compressed the cold-start phase from potentially infinite to 2-7 years.
 
-  ![Comparative Analysis](./chicken-egg-consulting-report/assets/165.png)
+  ![Comparative Analysis](./chicken-egg/assets/165.png)
 
 **Platforms struggled when:**
 - Supply was inelastic (low-elasticity B2B services)
@@ -444,7 +513,7 @@ Cohorts acquired at different points in the platform lifecycle show dramatically
 | **Early liquidity (P_match 70-85%)** | 20-30% | 45-55% | 65-70% | 75%+ |
 | **Post-liquidity (P_match > 90%)** | 10-15% | 25-30% | 35-40% | 50%+ |
 
-![Comparative Analysis](./chicken-egg-consulting-report/assets/167.png)
+![Comparative Analysis](./chicken-egg/assets/167.png)
 
 **Implication:** Acquiring users before liquidity is achieved wastes money. CAC paid to a pre-liquidity user is 50-75% wasted (they churn before coming back).
 
