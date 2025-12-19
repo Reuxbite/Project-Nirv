@@ -74,6 +74,10 @@
   ::before,
   ::backdrop,
   ::file-selector-button {
+    @apply tracking-normal;
+  }
+
+  p, li, span, div, a {
     @apply tracking-tight;
   }
 
