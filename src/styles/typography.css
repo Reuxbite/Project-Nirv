@@ -98,7 +98,8 @@
 
     :where(strong):not(:where(.not-prose, .not-prose *)) {
       color: #60a5fa;
-      font-weight: 500;
+      font-weight: 700;
+      letter-spacing: 0;
     }
 
     :where(ul):not(:where(.not-prose, .not-prose *)) {
