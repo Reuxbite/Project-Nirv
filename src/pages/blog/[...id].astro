@@ -1,5 +1,6 @@
 ---
 import Breadcrumbs from '@/components/Breadcrumbs.astro'
+import ImageGallery from '@/components/ImageGallery.astro'
 import Link from '@/components/Link.astro'
 import PostHead from '@/components/PostHead.astro'
 import PostNavigation from '@/components/PostNavigation.astro'
@@ -283,6 +284,7 @@ const tocSections = await getTOCSections(currentPostId)
       }
     })
   </script>
+  <ImageGallery />
 </Layout>
 
 <script>

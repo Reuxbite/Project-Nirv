@@ -32,6 +32,7 @@
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
+  size-adjust: 102%;
 }
 
 @font-face {
@@ -40,6 +41,7 @@
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
+  size-adjust: 102%;
 }
 
 :root {

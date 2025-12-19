@@ -1,6 +1,6 @@
 ---
 title: "The Chicken-and-Egg Problem"
-description: "A rigorous consulting-grade analysis of cold-start dynamics in two-sided platforms, grounded in NBER research, field experiments, and S-1 data."
+description: "cold-start dynamics in two-sided platforms, grounded in NBER research, field experiments, and S-1 data."
 date: 2025-12-11
 tags: ["platform_strategy", "network_effects", "marketplace_economics"]
 authors: ["ADV"]
@@ -603,7 +603,7 @@ Empirical evidence reveals five distinct strategic paths to overcoming cold star
 
 ### 5.4 Envelopment (Piggybacking on Existing Networks)
 
-**Mechanism:** Launch the marketplace on top of an existing large user base (payments platform, social network, logistics network, e-commerce platform). Leverage pre-existing same-side network effects to reduce cold-start friction.
+**Mechanism:** Launch the marketplace on top of an existing large user base (payments platform, social network, logistics network, e-commerce platform). Leverage pre-existing same-side network effects to reduce cold-sta rt friction.
 
 **Examples:**
 - **Facebook Marketplace (2016):** Leveraged 1.2B Facebook users. Marketplace adoption achieved critical mass within 6 months (no separate user acquisition required).
