@@ -22,7 +22,8 @@ export function calculateWordCountFromHtml(
 }
 
 export function readingTime(wordCount: number): string {
-  return ''
+  const minutesRead = Math.ceil(wordCount / 200)
+  return `${minutesRead} min read`
 }
 
 export function getHeadingMargin(depth: number): string {
