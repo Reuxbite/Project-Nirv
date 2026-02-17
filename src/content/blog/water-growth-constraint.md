@@ -3,7 +3,7 @@ title: "Water Scarcity and India's Economic Growth: How Water Availability Const
 description: "Data-driven analysis of how water scarcity, groundwater depletion, and drought impact India's agricultural productivity, urbanization, and macroeconomic stability with quantifiable metrics."
 date: 2026-02-17
 tags: ["systems", "development", "infrastructure"]
-authors: ["Project NIRV"]
+authors: ["ADV"]
 draft: false
 sources:
   - title: "FAO AQUASTAT – India"
